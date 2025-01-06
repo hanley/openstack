@@ -1,0 +1,340 @@
+    1  ip a
+    2  sudo shutdown -h 0
+    3  ip a
+    4  link set
+    5  link --help
+    6  ip link
+    7  ip link ?
+    8  ip link help
+    9  sudo ip link set enp0s8 up
+   10  ip a
+   11  sudo ip add add 192.168.97.105/24 dev enp0s8
+   12  ip a
+   13  history
+   14  hostnamectl set-hostname compute1
+   15  sudo hostnamectl set-hostname compute1
+   16  sudo reboot
+   17  sudo /etc/hosts
+   18  sudo nano /etc/hosts
+   19  ping controller
+   20  ping compuet1
+   21  ping compute1
+   22  ip a
+   23  ip link set enp0s8 up
+   24  sudo ip link set enp0s8 up
+   25  sudo ip add add 192.168.97.105 dev enp0s8 
+   26  ip a
+   27  ping compute1
+   28  ip r
+   29  ip r add 192.168.97.0/24 dev enp0s8
+   30  sudo ip r add 192.168.97.0/24 dev enp0s8
+   31  ip r
+   32  history
+   33  sudo apt install chrony
+   34  sudo nano /etc/chrony/chrony.conf 
+   35  sudo service chrony restart
+   36  chronyc sources
+   37  sudo nano /etc/chrony/chrony.conf 
+   38  sudo service chrony restart
+   39  chronyc sources
+   40  sudo add-apt-repository cloud-archive:caracal
+   41  sudo apt install nova-compute
+   42  cd /media
+   43  ls
+   44  cd ~
+   45  sudo nano /etc/nova/nova.conf
+   46  egrep -c '(vmx|svm)' /proc/cpuinfo
+   47  sudo shutdown -h 0
+   48  history
+   49  sudo ip link set enp0s8 up
+   50  sudo ip add add 192.168.97.105 dev enp0s8
+   51  sudo ip r add 192.168.97.0/24 dev enp0s8
+   52  egrep -c '(vmx|svm)' /proc/cpuinfo
+   53  sudo nano /etc/nova/nova-compute.conf
+   54  sudo service nova-compute restart
+   55  ping controller
+   56  ping compute1
+   57  sudo shutdown -h 0
+   58  exit
+   59  sudo ip link set enp0s8 up
+   60  sudo ip add add 192.168.97.105 dev enp0s8
+   61  sudo ip r add 192.168.97.0/24 dev enp0s8
+   62  ip a
+   63  sudo apt install ssh
+   64  systemctl status ssh.service
+   65  sudo nano /etc/ssh/sshd_config
+   66  sudo service ssh restart
+   67  sudo nano /etc/ssh/sshd_config
+   68  sudo service ssh restart
+   69  sudo nano /etc/ssh/sshd_config
+   70  sudo service ssh restart
+   71  sudo apt remove ssh
+   72  sudo nano /etc/ssh/sshd_config
+   73  systemctl status ssh.service
+   74  systemctl stop ssh.service
+   75  service ssh stop
+   76  sudo service
+   77  sudo service ssh
+   78  sudo service ssh status
+   79  sudo service ssh stop
+   80  cd /etc/ssh
+   81  ls
+   82  cd ..
+   83  rm -fr ssh
+   84  sudo rm -fr ssh
+   85  ls
+   86  cd ssh
+   87  cd ~
+   88  sudo apt install ssh
+   89  sudo apt remove ssh
+   90  cd /etc
+   91  rm -fr ssh
+   92  sudo apt install openssh-server
+   93  sudo systemctl start ssh
+   94  cd /etc/ssh
+   95  sudo apt remove openssh-server
+   96  sudo apt install openssh-server
+   97  sudo apt update
+   98  sudo apt install openssh-server
+   99  sudo apt purge openssh-server
+  100  sudo apt install openssh-server
+  101  sudo service ssh status
+  102  history
+  103  sudo apt install neutron-openvswitch-agent
+  104  sudo nano /etc/neutron/neutron.conf 
+  105  sudo nano /etc/neutron//plugins/ml2/openvswitch_agent.ini
+  106  sudo nano /etc/nova/nova.conf
+  107  sudo service nova-compute restart
+  108  sudo neutron-openvswitch-agent retsart
+  109  sudo neutron-openvswitch-agent restart
+  110  sudo service neutron-openvswitch-agent restart
+  111  ping controller
+  112  cd ..
+  113  cd ~
+  114  sudo nano /etc/neutron/neutron.conf 
+  115  ip a
+  116  sudo nano /etc/neutron/plugins/ml2/openvswitch_agent.ini
+  117  ip a
+  118  ovs-vsctl
+  119  ovs-vsctl --help
+  120  ovs-vsctl add-br
+  121  ovs-vsctl add-br compute-br
+  122  sudo ovs-vsctl add-br compute-br
+  123  sudo ovs-vsctl add-port compute-br enp0s3
+  124  sudo nano /etc/neutron/plugins/ml2/openvswitch_agent.ini
+  125  ip a
+  126  sudo ip liink compute-br up
+  127  sudo ip link compute-br up
+  128  sudo ip link 
+  129  sudo ip link compute-br up
+  130  sudo ip link dev compute-br up
+  131  sudo shutdown -h 0
+  132  history
+  133  sudo ip link set enp0s8 up
+  134  sudo ip add add 192.168.97.105 dev enp0s8
+  135  sudo ip r add 192.168.97.0/24 dev enp0s8
+  136  ip ad
+  137  ping 192.168.97.101
+  138  sudo shutdown -h 0
+  139  history
+  140  history : more
+  141  history | more
+  142  sudo shutdown -h 0
+  143  ip a
+  144  git
+  145  git config --global user.name "Hanley"
+  146  git config --global user.emal hanleyloo@gmail.com
+  147  ls
+  148  mkdir transfer
+  149  cd transfer/
+  150  git init
+  151  ls
+  152  ls -la
+  153  git remote add origin https://github.com/hanley/openstack.git
+  154  git
+  155  sudo cp /etc/hosts/ .
+  156  sudo cp /etc/hosts .
+  157  ls
+  158  sudo cp /etc/chrony/chrony.conf .
+  159  cd /etc/nova
+  160  sudo cd /etc/nova
+  161  cd /etc
+  162  ls
+  163  ls nova
+  164  sudo ls nova
+  165  cd ~
+  166  cd transfer/
+  167  sudo cp /etc/nova/nova.conf .
+  168  sudo cp /etc/nova/nova-compute.conf .
+  169  sudo cp /etc/ssh/sshd_config .
+  170  sudo cp /etc/neutron/neutron.conf .
+  171  sudo cp /etc/neutron/plugins/ml2/openvswitch_agent.ini
+  172  sudo cp /etc/neutron/plugins/ml2/openvswitch_agent.ini .
+  173  mkdir /etc
+  174  mkdir etc
+  175  mkdir etc/nova
+  176  mkdir etc/ssh
+  177  mkdir etc/neutron
+  178  mkdir etc/neutron/plugins/ml2
+  179  mkdir etc/neutron/plugins
+  180  mkdir etc/neutron/plugins/ml2
+  181  ls
+  182  cp hosts etc
+  183  ls
+  184  cd etc
+  185  ls
+  186  cd ..
+  187  mv hosts etc
+  188  mkdir etc/chrony
+  189  mv chrony.conf etc/chrony/
+  190  mv nova.conf etc/nova
+  191  mv nova-compute.conf etc/nova
+  192  mv sshd_config etc/ssh
+  193  mv neutron.conf etc/neutron/
+  194  mv openvswitch_agent.ini etc/neutron/plugins/ml2/
+  195  ls
+  196  git add *
+  197  ls
+  198  cd etc
+  199  ls
+  200  ls -la
+  201  cd neutron/
+  202  ls
+  203  ls -la
+  204  cd ..
+  205  sudo git add *
+  206  git status
+  207  git commit -m "Committing compute1 files"
+  208  git config --global user.email hanleyloo@gmail.com
+  209  git commit -m "Committing compute1 files"
+  210  git push origin master
+  211  sudo apt update
+  212  ip a
+  213  ip r
+  214  sudo ip r add default via 10.0.2.15 dev enp0s3
+  215  ip r
+  216  sudo apt update
+  217  ip r delete default
+  218  sudo ip r delete default
+  219  ls
+  220  ip r
+  221  sudo ip r delete default
+  222  ip r
+  223  sudo ip r add default via 10.0.2.15 dev enp0s3
+  224  sudo apt update
+  225  ip a
+  226  ip r
+  227  sudo ip r remove default
+  228  sudo ip r delete default
+  229  sudo ip r add default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+  230  ip r
+  231  dig www.ite.edu.sg
+  232  sudo apt update
+  233  sudo apt install nano
+  234  sudo apt install vim
+  235  sudo apt install ping
+  236  sudo apt install john
+  237  history
+  238  history | more
+  239  ip r
+  240  ping 10.0.2.2
+  241  ping google.com
+  242  nslookup
+  243  ovs-vsctl add-br br0
+  244  sudo ovs-vsctl add-br br0
+  245  ovs-vsctl add-port br0 enp0s3
+  246  sudo ovs-vsctl add-port br0 enp0s3
+  247  ip a
+  248  ovs-vsctl 
+  249  ovs-vsctl --help
+  250  ovs-vsctl --help | more
+  251  ovs-vsctl del-br br0
+  252  sudo ovs-vsctl del-br br0
+  253  ip a
+  254  ovs-vsctl show
+  255  sudo ovs-vsctl show
+  256  sudo ovs-vsctl show | more
+  257  ip a
+  258  ip link set compute-br up
+  259  sudo ip link set compute-br up
+  260  ip a
+  261  sudo ip link set br-int up
+  262  sudo ip link set ovs-system up
+  263  sudo ip link set br-tun up
+  264  sudo ip link set virbr0 up
+  265  ip a
+  266  sudo apt update
+  267  sudo net.bridge.bridge-nf-call-iptables
+  268  ip r
+  269  sudo shutdown -h 0
+  270  cd /mnt
+  271  ls
+  272  cd ..
+  273  cd /mnt
+  274  l
+  275  ls
+  276  cd ..
+  277  cd /dev
+  278  ls
+  279  cd cdrom
+  280  cd ~
+  281  ls
+  282  ip a
+  283  sudo apt update
+  284  ovs-ovctl show
+  285  ovs-vsctl show
+  286  sudo ovs-vsctl show
+  287  history | more
+  288  ip a
+  289  sudo ip link set enp0s8 up
+  290  sudo ip add add 192.168.97.110 enp0s8
+  291  ip a
+  292  sudo ip add add 192.168.97.110 dev enp0s8
+  293  sudo ip r add 192.168.97.0/24 dev enp0s8
+  294  ip a
+  295  /mnt
+  296  ls
+  297  cd /mnt
+  298  l
+  299  ls
+  300  sudo ovs-vsctl show
+  301  sudo ovs-vsctl 
+  302  sudo ovs-vsctl list openvswitch
+  303  sudo ovs-vsctl list open_vswitch
+  304  sudo ovs-vsctl list interface
+  305  sudo ovs-vsctl list interface | more
+  306  sudo ovs-vsctl show
+  307  sudo ovs-vsctl remove-br
+  308  sudo ovs-vsctl rmbr
+  309  sudo ovs-vsctl --help
+  310  sudo ovs-vsctl --help | more
+  311  sudo ovs-vsctl show
+  312  sudo ovs-vsctl del-port compute-br compute-br
+  313  sudo ovs-vsctl --help | more
+  314  sudo ovs-vsctl del-br compute-br
+  315  sudo ovs-vsctl show
+  316  sudo ovs-vsctl del-port br-int int-compute-br
+  317  sudo ovs-vsctl show
+  318  ip a
+  319  sudo apt update
+  320  ip r
+  321  ip r 
+  322  ip r /?
+  323  ip r del default
+  324  sudo ip r del default
+  325  ip r
+  326  ip r del 10.0.2.3 dev enp0s3
+  327  sudo ip r del 10.0.2.3 dev enp0s3
+  328  ip r
+  329  ip r del 10.0.2.2 dev enp0s3
+  330  sudo ip r del 10.0.2.2 dev enp0s3
+  331  ip r
+  332  ip r add default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+  333  sudo ip r add default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+  334  ip r
+  335  sudo apt update
+  336  nano
+  337  cd ~
+  338  ls
+  339  cd transfer
+  340  history > history.txt
